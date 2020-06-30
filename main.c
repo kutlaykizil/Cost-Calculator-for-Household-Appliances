@@ -80,7 +80,7 @@ int main(void)
     yellow(), printf("Choose your tariff group for your household.\n1-Single Phase\n2-Three Phase\n> "), colourreset();
     char phaseinput[10];
     phasechoose:;
-    scanf("%s", phaseinput);
+    scanf("%s", &phaseinput);
     timing = atoi(phaseinput);
     switch (timing)
     {
