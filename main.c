@@ -86,9 +86,7 @@ int main(void)
     {
     case 1:
         yellow(), printf("Write the price of 1 kW/h electricity for your area (write '0' for standard value(~0.57)).\n> "), colourreset();
-        char singlephaseinput[10];
-        scanf("%s", singlephaseinput);
-        singlephase = atoi(singlephaseinput);
+        scanf("%f", singlephase);
         if (singlephase == 0)
         {
             singlephase = 0.574033;
