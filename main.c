@@ -80,13 +80,13 @@ int main(void)
     yellow(), printf("Choose your tariff group for your household.\n1-Single Phase\n2-Three Phase\n> "), colourreset();
     char phaseinput[10];
     phasechoose:;
-    scanf("%s", &phaseinput);
+    scanf("%s", phaseinput);
     timing = atoi(phaseinput);
     switch (timing)
     {
     case 1:
         yellow(), printf("Write the price of 1 kW/h electricity for your area (write '0' for standard value(~0.57)).\n> "), colourreset();
-        scanf("%f", singlephase);
+        scanf("%f", &singlephase);
         if (singlephase == 0)
         {
             singlephase = 0.574033;
